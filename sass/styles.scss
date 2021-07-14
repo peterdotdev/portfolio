@@ -97,6 +97,10 @@ section {
     padding-top: calc(50vh - 60px - 128px*3/2);  // 256px
     text-transform: uppercase;
 
+    @media (max-height: 800px) {
+        padding-bottom: 128px;
+    }
+
     @media (max-width:1200px) {
         padding-top: 128px;
     }
@@ -118,6 +122,10 @@ section {
         font-size: 24px;
     }
     font-family: $monserrat;
+
+    @media (max-height: 800px) {
+        padding-bottom: 256px;
+    }
 }
 
 .about__info {
@@ -202,6 +210,10 @@ a.anchor {
 
     @media (max-width: 1088px) {
         padding-top: 500px;
+    }
+
+    @media (max-height: 800px) {
+        padding-bottom: 256px;
     }
 
     .projects {

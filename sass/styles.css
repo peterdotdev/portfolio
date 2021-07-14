@@ -107,6 +107,12 @@ section h1 {
   /* Y aca haria falta uno mas para las pantallas mas delgadas */
 }
 
+@media (max-height: 800px) {
+  #inicio {
+    padding-bottom: 128px;
+  }
+}
+
 @media (max-width: 1200px) {
   #inicio {
     padding-top: 128px;
@@ -132,6 +138,12 @@ section h1 {
 
 #about p {
   font-size: 24px;
+}
+
+@media (max-height: 800px) {
+  #about {
+    padding-bottom: 256px;
+  }
 }
 
 .about__info {
@@ -236,6 +248,12 @@ a.anchor {
 @media (max-width: 1088px) {
   #portfolio {
     padding-top: 500px;
+  }
+}
+
+@media (max-height: 800px) {
+  #portfolio {
+    padding-bottom: 256px;
   }
 }
 
