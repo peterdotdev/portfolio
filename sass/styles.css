@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #D1A701;
+}
+
+/* NAVEGATION BAR */
+nav {
+  background-color: #120501;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  text-transform: uppercase;
+  height: 64px;
+  width: 100%;
+  z-index: 99;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  width: 90%;
+  max-width: 520px;
+}
+
+nav li {
+  padding: 20px 15px;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+}
+
+nav a {
+  color: #fdeb37;
+  text-decoration: none;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+}
+
+nav a:hover {
+  background-color: #D1A701;
+  color: #120501;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  nav {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* MAIN */
+main {
+  background-color: #D1A701;
+  padding-top: 80px;
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+}
+
+section h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  padding-bottom: 48px;
+}
+
+#inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 256px + 64px);
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  line-height: 128px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: calc(50vh - 60px - 128px*3/2);
+  text-transform: uppercase;
+  /* Y aca haria falta uno mas para las pantallas mas delgadas */
+}
+
+@media (max-width: 1200px) {
+  #inicio {
+    padding-top: 128px;
+  }
+}
+
+@media (max-width: 716px) {
+  #inicio {
+    font-size: 48px;
+    line-height: 96px;
+  }
+}
+
+@media (max-width: 500px) {
+  #inicio {
+    font-size: 8vw;
+  }
+}
+
+#about {
+  font-family: "Montserrat", sans-serif;
+}
+
+#about p {
+  font-size: 24px;
+}
+
+.about__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 32px;
+  width: 480px;
+  margin-left: 32px;
+  margin-right: 24px;
+}
+
+.about__text p {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+@media (max-width: 1088px) {
+  .about__text {
+    padding-bottom: 96px;
+  }
+}
+
+.about__skills__wrapper {
+  text-align: center;
+  margin-left: 24px;
+  margin-right: 32px;
+  width: 480px;
+}
+
+.about__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 400px;
+  text-align: center;
+  width: 100%;
+}
+
+.about__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.33%;
+}
+
+.about__icon i {
+  padding-bottom: 12px;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.icon__text {
+  font-weight: 600;
+}
+
+/* PROYECTOS */
+@media (max-width: 1088px) {
+  #portfolio {
+    padding-top: 500px;
+  }
+}
+
+#portfolio .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#portfolio .projects .project {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 48px;
+  width: 450px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+#portfolio .projects .project .project-content {
+  color: #fdeb37;
+  background-color: #120501;
+  position: absolute;
+  padding-top: 20%;
+  opacity: 0;
+  -webkit-transition: all cubic-bezier(0.5, 0, 0, 1) 0.45s;
+  transition: all cubic-bezier(0.5, 0, 0, 1) 0.45s;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 300px;
+}
+
+#portfolio .projects .project .project-content h6 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fdeb37;
+}
+
+#portfolio .projects .project .project-content p {
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+#portfolio .projects .project .project-content a {
+  color: #fdeb37;
+  display: inline;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#portfolio .projects .project .project-content a p {
+  font-size: 14px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#portfolio .projects .project .project-content a p, #portfolio .projects .project .project-content a i {
+  color: whitesmoke;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#portfolio .projects .project .project-content .website-github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24px;
+}
+
+#portfolio .projects .project .project-content i {
+  display: inline;
+}
+
+#portfolio .projects .project .project-content p {
+  display: inline;
+}
+
+#portfolio .projects .project .project-content .project-website {
+  background-color: #000;
+  margin-right: 16px;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+#portfolio .projects .project .project-content .project-website:hover p, #portfolio .projects .project .project-content .project-website:hover i {
+  color: #fdeb37;
+}
+
+#portfolio .projects .project .project-content .project-github {
+  background-color: #000;
+  margin-left: 16px;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+#portfolio .projects .project .project-content .project-github:hover p, #portfolio .projects .project .project-content .project-github:hover i {
+  color: #fdeb37;
+}
+
+#portfolio .projects .project img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 800px;
+  -webkit-transition: all cubic-bezier(0.5, 0, 0, 1) 1s;
+  transition: all cubic-bezier(0.5, 0, 0, 1) 1s;
+}
+
+#portfolio .projects .project:hover .project-content {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  -webkit-transition: all cubic-bezier(0.5, 0, 0, 1) 0.45s;
+  transition: all cubic-bezier(0.5, 0, 0, 1) 0.45s;
+}
+
+#portfolio .projects .project:hover img {
+  position: absolute;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 940px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#portfolio .projects .project:hover #petshop-page-image {
+  left: -30px;
+  top: -25px;
+}
+
+#portfolio .projects .project:hover #tribute-page-image {
+  left: -70px;
+  top: -30px;
+}
+
+#portfolio .projects .project:hover #documentation-page-image {
+  left: -30px;
+  top: -20px;
+}
+
+#portfolio .projects .project:hover #cv-page-image {
+  width: 700px;
+  height: 350px;
+  left: -55px;
+  top: -14px;
+}
+
+#portfolio .projects .project:hover #surver-page-image {
+  left: -70px;
+  top: -30px;
+}
+
+#portfolio .projects .project:hover #landing-page-image {
+  left: -70px;
+  top: -32px;
+}
+
+#portfolio .projects #survey-page-project {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+#portfolio .projects #survey-page-project img {
+  margin-top: -10px;
+  margin-left: -175px;
+}
+
+#portfolio .projects #landing-page-project {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+#portfolio .projects #landing-page-project img {
+  margin-top: -20px;
+  margin-left: -175px;
+}
+
+#portfolio .projects #documentation-page-project {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+#portfolio .projects #tribute-page-project {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#portfolio .projects #tribute-page-project img {
+  margin-left: -175px;
+}
+
+#portfolio .projects #pet-shop-page-project {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#portfolio .projects #cv-page-project {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+#portfolio .projects #cv-page-project img {
+  margin-top: -8px;
+  margin-left: -72px;
+  height: 310px;
+  width: 590px;
+}
+
+/* CONTACT */
+#contact {
+  height: 100%;
+}
+
+@media (max-width: 1558px) {
+  #contact {
+    margin-top: 324px;
+  }
+}
+
+@media (max-width: 1060px) {
+  #contact {
+    margin-top: 1324px;
+  }
+}
+
+#contact p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+#contact i {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+#contact a {
+  color: #120501;
+  text-decoration: none;
+}
+
+#contact .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+@media (max-width: 800px) {
+  #contact .social-links {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  #contact .social-links {
+    width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact .social-links {
+    width: 90%;
+  }
+}
+
+@media (max-width: 570px) {
+  #contact .social-links {
+    width: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 24px;
+  }
+  #contact .social-links p {
+    margin-bottom: 24px;
+  }
+}
+
+footer {
+  background-color: #120501;
+  color: #fdeb37;
+  font-weight: 500;
+  margin-top: 134px;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 570px) {
+  footer {
+    margin-top: 20px;
+  }
+}
+
+.twitter p, .twitter i {
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.twitter:hover p, .twitter:hover i {
+  color: #006000;
+}
+
+.github p, .github i {
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.github:hover p, .github:hover i {
+  color: #006000;
+}
+
+.linkedin p, .linkedin i {
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.linkedin:hover p, .linkedin:hover i {
+  color: #006000;
+}
+/*# sourceMappingURL=styles.css.map */
